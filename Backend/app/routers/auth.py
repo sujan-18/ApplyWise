@@ -5,8 +5,9 @@ from sqlalchemy import select
 from sqlalchemy.orm import Session
 
 from app.database import get_db
+from app.dependencies import get_current_user
 from app.models import User
-from app.schemas.user import UserCreate, UserResponse
+from app.schemas.user import UserCreate, UserResponse, UserUpdate
 from app.security import hash_password, verify_password
 
 from app.schemas.auth import LoginRequest, TokenResponse
@@ -17,6 +18,46 @@ router = APIRouter(
     prefix="/auth",
     tags=["Authentication"]
 )
+
+
+@router.get("/me", response_model=UserResponse)
+def get_my_profile(
+    current_user: Annotated[User, Depends(get_current_user)],
+):
+    """Return the authenticated user's safe profile fields."""
+    return current_user
+
+
+@router.patch("/me", response_model=UserResponse)
+def update_my_profile(
+    profile_data: UserUpdate,
+    current_user: Annotated[User, Depends(get_current_user)],
+    db: Annotated[Session, Depends(get_db)],
+):
+    updates = profile_data.model_dump(exclude_unset=True)
+    if any(value is None for value in updates.values()):
+        raise HTTPException(
+            status_code=status.HTTP_422_UNPROCESSABLE_ENTITY,
+            detail="Profile fields cannot be null",
+        )
+
+    email = updates.get("email")
+    if email and email != current_user.email:
+        existing_user = db.scalar(
+            select(User).where(User.email == email, User.id != current_user.id)
+        )
+        if existing_user:
+            raise HTTPException(
+                status_code=status.HTTP_409_CONFLICT,
+                detail="Email is already registered",
+            )
+
+    for field, value in updates.items():
+        setattr(current_user, field, value)
+
+    db.commit()
+    db.refresh(current_user)
+    return current_user
 
 
 @router.post(

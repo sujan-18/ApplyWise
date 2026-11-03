@@ -1,0 +1,123 @@
+127.0.0.1 - - [03/Nov/2026 19:41:37] "GET /login.html HTTP/1.1" 200 -
+127.0.0.1 - - [03/Nov/2026 19:41:37] "GET /register.html HTTP/1.1" 200 -
+127.0.0.1 - - [03/Nov/2026 19:41:37] "GET /index.html HTTP/1.1" 200 -
+127.0.0.1 - - [03/Nov/2026 19:41:37] "GET /output.css HTTP/1.1" 200 -
+127.0.0.1 - - [03/Nov/2026 19:46:02] "GET /js/api.js HTTP/1.1" 200 -
+127.0.0.1 - - [03/Nov/2026 19:46:02] "GET /js/auth.js HTTP/1.1" 200 -
+127.0.0.1 - - [03/Nov/2026 19:46:02] "GET /js/applicationFilters.js HTTP/1.1" 200 -
+127.0.0.1 - - [03/Nov/2026 19:46:02] "GET /js/app.js HTTP/1.1" 200 -
+127.0.0.1 - - [03/Nov/2026 19:46:02] "GET /login.html HTTP/1.1" 200 -
+127.0.0.1 - - [03/Nov/2026 19:46:03] "GET /register.html HTTP/1.1" 200 -
+127.0.0.1 - - [03/Nov/2026 19:46:03] "GET /index.html HTTP/1.1" 200 -
+127.0.0.1 - - [03/Nov/2026 19:46:03] "GET /output.css HTTP/1.1" 200 -
+127.0.0.1 - - [03/Nov/2026 19:51:42] "GET /login.html HTTP/1.1" 200 -
+127.0.0.1 - - [03/Nov/2026 19:51:42] "GET /output.css HTTP/1.1" 200 -
+127.0.0.1 - - [03/Nov/2026 19:51:42] "GET /js/api.js HTTP/1.1" 200 -
+127.0.0.1 - - [03/Nov/2026 19:51:42] "GET /js/auth.js HTTP/1.1" 200 -
+127.0.0.1 - - [03/Nov/2026 19:51:42] code 404, message File not found
+127.0.0.1 - - [03/Nov/2026 19:51:42] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [03/Nov/2026 19:51:46] "GET /login.html HTTP/1.1" 304 -
+127.0.0.1 - - [03/Nov/2026 19:52:05] "GET /index.html HTTP/1.1" 200 -
+127.0.0.1 - - [03/Nov/2026 19:52:05] "GET /js/applicationFilters.js HTTP/1.1" 200 -
+127.0.0.1 - - [03/Nov/2026 19:52:05] "GET /js/app.js HTTP/1.1" 200 -
+127.0.0.1 - - [03/Nov/2026 19:54:42] "GET /index.html HTTP/1.1" 200 -
+127.0.0.1 - - [03/Nov/2026 19:54:42] "GET /js/app.js HTTP/1.1" 200 -
+127.0.0.1 - - [03/Nov/2026 19:56:58] "GET /index.html HTTP/1.1" 200 -
+127.0.0.1 - - [03/Nov/2026 19:56:58] "GET /output.css HTTP/1.1" 200 -
+127.0.0.1 - - [03/Nov/2026 19:56:59] "GET /js/applicationFilters.js HTTP/1.1" 304 -
+127.0.0.1 - - [03/Nov/2026 19:56:59] "GET /js/api.js HTTP/1.1" 304 -
+127.0.0.1 - - [03/Nov/2026 19:56:59] "GET /js/app.js HTTP/1.1" 200 -
+127.0.0.1 - - [03/Nov/2026 19:57:24] "GET /index.html HTTP/1.1" 304 -
+127.0.0.1 - - [03/Nov/2026 19:57:25] "GET /output.css HTTP/1.1" 304 -
+127.0.0.1 - - [03/Nov/2026 19:57:25] "GET /js/app.js HTTP/1.1" 304 -
+127.0.0.1 - - [03/Nov/2026 19:57:46] "GET /index.html HTTP/1.1" 304 -
+127.0.0.1 - - [03/Nov/2026 19:57:46] "GET /output.css HTTP/1.1" 304 -
+127.0.0.1 - - [03/Nov/2026 19:57:46] "GET /js/app.js HTTP/1.1" 304 -
+127.0.0.1 - - [03/Nov/2026 19:57:56] "GET /output.css HTTP/1.1" 304 -
+127.0.0.1 - - [03/Nov/2026 19:58:19] "GET /index.html HTTP/1.1" 200 -
+127.0.0.1 - - [03/Nov/2026 19:58:19] "GET /output.css HTTP/1.1" 200 -
+127.0.0.1 - - [03/Nov/2026 19:58:19] "GET /js/api.js HTTP/1.1" 200 -
+127.0.0.1 - - [03/Nov/2026 19:58:19] "GET /js/applicationFilters.js HTTP/1.1" 200 -
+127.0.0.1 - - [03/Nov/2026 19:58:19] "GET /js/app.js HTTP/1.1" 200 -
+127.0.0.1 - - [03/Nov/2026 19:58:19] "GET /login.html HTTP/1.1" 200 -
+127.0.0.1 - - [03/Nov/2026 19:58:19] "GET /js/auth.js HTTP/1.1" 200 -
+127.0.0.1 - - [03/Nov/2026 19:58:19] code 404, message File not found
+127.0.0.1 - - [03/Nov/2026 19:58:19] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [03/Nov/2026 19:58:33] "GET /index.html HTTP/1.1" 304 -
+127.0.0.1 - - [03/Nov/2026 19:58:33] "GET /output.css HTTP/1.1" 304 -
+127.0.0.1 - - [03/Nov/2026 20:08:44] "GET /index.html HTTP/1.1" 200 -
+127.0.0.1 - - [03/Nov/2026 20:08:44] "GET /output.css HTTP/1.1" 200 -
+127.0.0.1 - - [03/Nov/2026 20:08:45] "GET /js/api.js HTTP/1.1" 304 -
+127.0.0.1 - - [03/Nov/2026 20:08:45] "GET /js/app.js HTTP/1.1" 200 -
+127.0.0.1 - - [03/Nov/2026 20:08:45] "GET /js/applicationFilters.js HTTP/1.1" 304 -
+127.0.0.1 - - [03/Nov/2026 20:09:18] "GET /index.html HTTP/1.1" 200 -
+127.0.0.1 - - [03/Nov/2026 20:09:18] "GET /login.html HTTP/1.1" 200 -
+127.0.0.1 - - [03/Nov/2026 20:09:18] "GET /register.html HTTP/1.1" 200 -
+127.0.0.1 - - [03/Nov/2026 20:09:18] "GET /output.css HTTP/1.1" 200 -
+127.0.0.1 - - [03/Nov/2026 20:09:18] "GET /js/app.js HTTP/1.1" 200 -
+127.0.0.1 - - [03/Nov/2026 20:09:21] "GET /index.html HTTP/1.1" 304 -
+127.0.0.1 - - [03/Nov/2026 20:09:21] "GET /js/app.js HTTP/1.1" 304 -
+127.0.0.1 - - [03/Nov/2026 20:09:21] "GET /output.css HTTP/1.1" 200 -
+127.0.0.1 - - [03/Nov/2026 20:11:50] "GET /index.html HTTP/1.1" 200 -
+127.0.0.1 - - [03/Nov/2026 20:11:50] "GET /output.css HTTP/1.1" 304 -
+127.0.0.1 - - [03/Nov/2026 20:11:50] "GET /js/applicationFilters.js HTTP/1.1" 304 -
+127.0.0.1 - - [03/Nov/2026 20:11:50] "GET /js/app.js HTTP/1.1" 200 -
+127.0.0.1 - - [03/Nov/2026 20:11:51] "GET /index.html HTTP/1.1" 304 -
+127.0.0.1 - - [03/Nov/2026 20:11:52] "GET /index.html HTTP/1.1" 200 -
+127.0.0.1 - - [03/Nov/2026 20:11:53] "GET /index.html HTTP/1.1" 304 -
+127.0.0.1 - - [03/Nov/2026 20:11:53] "GET /index.html HTTP/1.1" 304 -
+127.0.0.1 - - [03/Nov/2026 20:12:15] "GET /index.html HTTP/1.1" 200 -
+127.0.0.1 - - [03/Nov/2026 20:12:15] "GET /output.css HTTP/1.1" 304 -
+127.0.0.1 - - [03/Nov/2026 20:12:15] "GET /js/app.js HTTP/1.1" 304 -
+127.0.0.1 - - [03/Nov/2026 20:18:20] "GET /index.html HTTP/1.1" 200 -
+127.0.0.1 - - [03/Nov/2026 20:18:20] "GET /output.css HTTP/1.1" 200 -
+127.0.0.1 - - [03/Nov/2026 20:18:20] code 404, message File not found
+127.0.0.1 - - [03/Nov/2026 20:18:20] "GET /assets/mountain-hero.png HTTP/1.1" 404 -
+127.0.0.1 - - [03/Nov/2026 20:18:20] "GET /js/api.js HTTP/1.1" 304 -
+127.0.0.1 - - [03/Nov/2026 20:18:20] "GET /js/app.js HTTP/1.1" 304 -
+127.0.0.1 - - [03/Nov/2026 20:18:20] "GET /js/applicationFilters.js HTTP/1.1" 304 -
+127.0.0.1 - - [03/Nov/2026 20:18:24] "GET /index.html HTTP/1.1" 304 -
+127.0.0.1 - - [03/Nov/2026 20:18:24] "GET /index.html HTTP/1.1" 304 -
+127.0.0.1 - - [03/Nov/2026 20:18:25] "GET /output.css HTTP/1.1" 304 -
+127.0.0.1 - - [03/Nov/2026 20:18:25] code 404, message File not found
+127.0.0.1 - - [03/Nov/2026 20:18:25] "GET /assets/mountain-hero.png HTTP/1.1" 404 -
+127.0.0.1 - - [03/Nov/2026 20:18:25] "GET /index.html HTTP/1.1" 304 -
+127.0.0.1 - - [03/Nov/2026 20:18:25] code 404, message File not found
+127.0.0.1 - - [03/Nov/2026 20:18:25] "GET /assets/mountain-hero.png HTTP/1.1" 404 -
+127.0.0.1 - - [03/Nov/2026 20:18:25] "GET /index.html HTTP/1.1" 200 -
+127.0.0.1 - - [03/Nov/2026 20:18:25] "GET /index.html HTTP/1.1" 304 -
+127.0.0.1 - - [03/Nov/2026 20:18:26] code 404, message File not found
+127.0.0.1 - - [03/Nov/2026 20:18:26] "GET /assets/mountain-hero.png HTTP/1.1" 404 -
+127.0.0.1 - - [03/Nov/2026 20:18:26] "GET /index.html HTTP/1.1" 304 -
+127.0.0.1 - - [03/Nov/2026 20:18:26] code 404, message File not found
+127.0.0.1 - - [03/Nov/2026 20:18:26] "GET /assets/mountain-hero.png HTTP/1.1" 404 -
+127.0.0.1 - - [03/Nov/2026 20:18:26] "GET /index.html HTTP/1.1" 304 -
+127.0.0.1 - - [03/Nov/2026 20:18:26] "GET /index.html HTTP/1.1" 304 -
+127.0.0.1 - - [03/Nov/2026 20:18:27] "GET /index.html HTTP/1.1" 304 -
+127.0.0.1 - - [03/Nov/2026 20:18:27] "GET /index.html HTTP/1.1" 304 -
+127.0.0.1 - - [03/Nov/2026 20:18:27] code 404, message File not found
+127.0.0.1 - - [03/Nov/2026 20:18:27] "GET /assets/mountain-hero.png HTTP/1.1" 404 -
+127.0.0.1 - - [03/Nov/2026 20:18:27] "GET /index.html HTTP/1.1" 304 -
+127.0.0.1 - - [03/Nov/2026 20:18:27] code 404, message File not found
+127.0.0.1 - - [03/Nov/2026 20:18:27] "GET /assets/mountain-hero.png HTTP/1.1" 404 -
+127.0.0.1 - - [03/Nov/2026 20:18:27] "GET /index.html HTTP/1.1" 304 -
+127.0.0.1 - - [03/Nov/2026 20:18:27] code 404, message File not found
+127.0.0.1 - - [03/Nov/2026 20:18:27] "GET /assets/mountain-hero.png HTTP/1.1" 404 -
+127.0.0.1 - - [03/Nov/2026 20:21:07] "GET /index.html HTTP/1.1" 200 -
+127.0.0.1 - - [03/Nov/2026 20:21:07] "GET /output.css HTTP/1.1" 200 -
+127.0.0.1 - - [03/Nov/2026 20:21:07] code 404, message File not found
+127.0.0.1 - - [03/Nov/2026 20:21:07] "GET /assets/mountain-hero.png HTTP/1.1" 404 -
+127.0.0.1 - - [03/Nov/2026 20:21:07] "GET /js/api.js HTTP/1.1" 304 -
+127.0.0.1 - - [03/Nov/2026 20:21:07] "GET /js/applicationFilters.js HTTP/1.1" 304 -
+127.0.0.1 - - [03/Nov/2026 20:21:07] "GET /js/app.js HTTP/1.1" 200 -
+127.0.0.1 - - [03/Nov/2026 20:21:07] "GET /index.html HTTP/1.1" 304 -
+127.0.0.1 - - [03/Nov/2026 20:21:08] code 404, message File not found
+127.0.0.1 - - [03/Nov/2026 20:21:08] "GET /assets/mountain-hero.png HTTP/1.1" 404 -
+127.0.0.1 - - [03/Nov/2026 20:21:49] "GET /index.html HTTP/1.1" 200 -
+127.0.0.1 - - [03/Nov/2026 20:21:50] "GET /output.css HTTP/1.1" 304 -
+127.0.0.1 - - [03/Nov/2026 20:21:50] "GET /assets/Lone%20Hiker%20Above%20the%20Purple%20Mountains.png HTTP/1.1" 200 -
+127.0.0.1 - - [03/Nov/2026 20:21:50] "GET /index.html HTTP/1.1" 304 -
+127.0.0.1 - - [03/Nov/2026 20:21:50] "GET /index.html HTTP/1.1" 304 -
+127.0.0.1 - - [03/Nov/2026 20:22:03] "GET /index.html HTTP/1.1" 200 -
+127.0.0.1 - - [03/Nov/2026 20:22:03] "GET /assets/Lone%20Hiker%20Above%20the%20Purple%20Mountains.png HTTP/1.1" 200 -
+127.0.0.1 - - [03/Nov/2026 20:22:05] "GET /output.css HTTP/1.1" 200 -

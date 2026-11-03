@@ -10,6 +10,7 @@ from app.database import Base
 
 class ApplicationStatus(str, Enum):
     APPLIED = "Applied"
+    INTERVIEW = "Interview"
     INTERVIEW_SCHEDULED = "Interview Scheduled"
     INTERVIEW_TAKEN = "Interview Taken"
     ACCEPTED = "Accepted"
