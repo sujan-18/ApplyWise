@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+::selection {
+  color: #312e81;
+  background: #ede9fe;
+}
+
+dialog[open] {
+  animation: dialog-in 160ms ease-out;
+}
+
+@keyframes dialog-in {
+  from { opacity: 0; transform: translateY(8px) scale(.99); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; }
+}
+
+#hero-background {
+  object-position: center 47%;
+}
+
+@media (max-width: 767px) {
+  #hero-background {
+    object-position: 72% 52%;
+  }
+}
