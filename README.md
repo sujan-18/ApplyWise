@@ -21,8 +21,8 @@ ApplyWise is an internship application tracker with a FastAPI API and a static H
    npm start
    ```
 
-4. Open `http://localhost:3001`. The API runs at `http://localhost:8000`; for a same-origin frontend, open `http://localhost:8000/app/`.
+4. Open `http://localhost:3000`. The server serves `Frontend/src` as the web root, so the URL opens the public landing page directly. New users can register or log in from there. The API runs at `http://localhost:8000`; for a same-origin frontend, open `http://localhost:8000/app/`.
 
-For frontend styling changes, keep `npm run dev` running in another terminal while editing. The API docs are available at `http://localhost:8000/docs`.
+For frontend styling changes, run `npm run dev:css` in another terminal while editing, then run `npm run build`. The API docs are available at `http://localhost:8000/docs`.
 
 The dashboard hero photo is loaded from `Frontend/src/assets/Lone Hiker Above the Purple Mountains.png`.

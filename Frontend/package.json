@@ -5,9 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "node --test",
-    "dev": "tailwindcss -i ./src/css/input.css -o ./src/output.css --watch",
+    "dev": "python -m http.server 3000 --bind 0.0.0.0 --directory src",
+    "dev:css": "tailwindcss -i ./src/css/input.css -o ./src/output.css --watch",
     "build": "tailwindcss -i ./src/css/input.css -o ./src/output.css --minify",
-    "start": "python -m http.server 3001 --directory src"
+    "start": "npm run dev"
   },
   "keywords": [],
   "author": "",

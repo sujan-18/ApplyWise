@@ -39,3 +39,8 @@ class User(Base):
         back_populates="user",
         cascade="all, delete-orphan",
     )
+
+    resume_analyses: Mapped[list["ResumeAnalysis"]] = relationship(
+        back_populates="user",
+        cascade="all, delete-orphan",
+    )

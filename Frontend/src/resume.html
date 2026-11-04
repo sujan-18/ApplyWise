@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f4f2ff" />
+    <title>ApplyWise | Resume Analyzer</title>
+    <link href="./output.css" rel="stylesheet" />
+  </head>
+  <body class="min-h-screen bg-[#f5f3ff] font-sans text-[#111235] antialiased">
+    <aside class="fixed inset-y-0 left-0 z-20 hidden w-[295px] flex-col bg-[#11112f] px-[22px] py-[26px] text-white shadow-2xl shadow-indigo-950/10 lg:flex">
+      <a href="./dashboard.html" class="mb-12 flex items-center gap-3 px-1">
+        <span class="grid size-[50px] place-items-center rounded-[16px] bg-gradient-to-br from-[#a74dff] to-[#6528e8] text-[26px] font-black shadow-lg shadow-violet-900/40">A</span>
+        <span class="text-[23px] font-extrabold tracking-tight">Apply<span class="text-[#a875ff]">Wise</span></span>
+      </a>
+      <nav class="space-y-2" aria-label="Main navigation">
+        <a href="./dashboard.html" class="flex items-center gap-4 rounded-[16px] px-4 py-[14px] text-[16px] font-medium text-[#c5c4e3] transition hover:bg-white/5 hover:text-white">
+          <svg class="size-6" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m3 10 9-7 9 7v10a1 1 0 0 1-1 1h-5v-7H9v7H4a1 1 0 0 1-1-1V10Z"/></svg>Dashboard
+        </a>
+        <a href="./dashboard.html#applications" class="flex items-center gap-4 rounded-[16px] px-4 py-[14px] text-[16px] font-medium text-[#c5c4e3] transition hover:bg-white/5 hover:text-white">
+          <svg class="size-6" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><rect x="3" y="3" width="8" height="8" rx="2"/><rect x="14" y="3" width="7" height="8" rx="2"/><rect x="3" y="14" width="8" height="7" rx="2"/><rect x="14" y="14" width="7" height="7" rx="2"/></svg>Applications
+        </a>
+        <a href="./resume.html" aria-current="page" class="flex items-center gap-4 rounded-[16px] bg-gradient-to-r from-[#6928de] to-[#4720a4] px-4 py-[15px] text-[16px] font-semibold shadow-lg shadow-violet-950/30">
+          <svg class="size-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M7 3h7l5 5v13H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2Z"/><path d="M14 3v6h6M9 13h7M9 17h5"/><circle cx="5" cy="17" r="3" fill="#11112f"/><path d="m7 19 2 2"/></svg>Resume Analyzer
+        </a>
+      </nav>
+
+      <section class="relative mt-auto overflow-hidden rounded-[20px] border border-violet-300/10 bg-gradient-to-br from-[#241655] via-[#21144c] to-[#17163d] px-4 py-5 text-center">
+        <span class="mb-2 inline-grid size-12 place-items-center rounded-2xl bg-violet-400/15 text-2xl" aria-hidden="true">✦</span>
+        <p class="text-[17px] font-bold">Make your next move</p>
+        <p class="mt-1 text-[13px] text-[#c5c4e3]">Turn your experience into a clear plan.</p>
+      </section>
+
+      <div class="mt-7 border-t border-white/[.08] pt-5">
+        <div class="flex items-center gap-3 rounded-xl p-1">
+          <span id="profile-initials" class="grid size-12 shrink-0 place-items-center rounded-full bg-gradient-to-br from-[#9c4bff] to-[#5928d0] text-sm font-bold text-white">?</span>
+          <span class="min-w-0 flex-1"><span id="profile-name" class="block truncate text-sm font-semibold">Loading profile...</span><span id="profile-email" class="block truncate text-xs text-[#aaa9cc]"></span></span>
+        </div>
+        <button data-logout type="button" class="mt-3 flex w-full items-center gap-3 rounded-xl px-3 py-2 text-sm font-medium text-[#aaa9cc] transition hover:bg-white/5 hover:text-white">Log out</button>
+      </div>
+    </aside>
+
+    <main class="min-h-screen lg:ml-[295px]">
+      <header class="relative isolate overflow-hidden bg-gradient-to-br from-[#f5f1ff] via-[#f4f3ff] to-[#e3e9ff] px-5 py-6 sm:px-8 lg:px-10 lg:py-8">
+        <img src="./assets/Lone%20Hiker%20Above%20the%20Purple%20Mountains.png" alt="" class="pointer-events-none absolute inset-0 -z-10 h-full w-full object-cover object-[70%_48%]" />
+        <div class="pointer-events-none absolute inset-0 -z-10 bg-gradient-to-r from-[#f5f2ff] via-[#f5f2ff]/90 via-60% to-[#e8e6ff]/20"></div>
+        <div class="mb-6 flex items-center justify-between lg:hidden">
+          <a href="./dashboard.html" class="flex items-center gap-2.5"><span class="grid size-10 place-items-center rounded-xl bg-gradient-to-br from-[#a74dff] to-[#6528e8] font-black text-white">A</span><span class="text-lg font-extrabold">Apply<span class="text-violet-600">Wise</span></span></a>
+          <a href="./dashboard.html" class="rounded-xl bg-white/80 px-3 py-2 text-sm font-semibold text-violet-700">Dashboard</a>
+        </div>
+        <p class="text-sm font-extrabold uppercase tracking-[.12em] text-[#6c25d8]">Career toolkit</p>
+        <div class="mt-2 flex flex-col justify-between gap-3 sm:flex-row sm:items-end">
+          <div><h1 class="text-[34px] font-extrabold leading-tight tracking-[-.04em] text-[#111235] sm:text-[42px]">Resume Analyzer</h1><p class="mt-2 max-w-2xl text-base font-medium text-[#575b91]">Get a clear view of your strengths and practical next steps for your career.</p></div>
+          <span class="inline-flex w-fit items-center gap-2 rounded-full border border-white/80 bg-white/75 px-3 py-2 text-xs font-semibold text-[#555280] shadow-sm"><span class="size-2 rounded-full bg-emerald-500"></span>Private to your account</span>
+        </div>
+      </header>
+
+      <div class="px-5 pb-12 pt-6 sm:px-8 lg:px-9">
+        <div class="grid items-start gap-5 xl:grid-cols-[minmax(0,1.35fr)_minmax(18rem,.65fr)]">
+          <section class="rounded-[22px] border border-[#e6e1ff] bg-white/95 p-5 shadow-[0_12px_32px_-22px_rgba(68,47,160,.3)] sm:p-7" aria-labelledby="upload-heading">
+            <div class="mb-5 flex items-start gap-4">
+              <span class="grid size-12 shrink-0 place-items-center rounded-2xl bg-violet-100 text-violet-700"><svg class="size-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 16V4m0 0L7.5 8.5M12 4l4.5 4.5"/><path d="M5 14v5a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-5"/></svg></span>
+              <div><h2 id="upload-heading" class="text-xl font-extrabold">Upload your resume</h2><p class="mt-1 text-sm text-[#69698f]">PDF or DOCX, up to 5 MB. Your file is analyzed securely.</p></div>
+            </div>
+
+            <input id="resume-file" type="file" accept=".pdf,.docx,application/pdf,application/vnd.openxmlformats-officedocument.wordprocessingml.document" class="sr-only" />
+            <button id="resume-dropzone" type="button" class="group flex min-h-[220px] w-full flex-col items-center justify-center rounded-[20px] border-2 border-dashed border-violet-200 bg-gradient-to-br from-violet-50/70 to-indigo-50/60 px-5 py-8 text-center transition hover:border-violet-400 hover:bg-violet-50 focus:outline-none focus:ring-4 focus:ring-violet-100" aria-describedby="upload-help">
+              <span class="mb-4 grid size-14 place-items-center rounded-2xl bg-white text-violet-600 shadow-sm transition group-hover:-translate-y-1"><svg class="size-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 16V4m0 0L7.5 8.5M12 4l4.5 4.5"/><path d="M5 14v5a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-5"/></svg></span>
+              <span class="text-base font-bold text-[#25264f]">Drop your resume here</span>
+              <span class="mt-1 text-sm text-[#74759b]">or click to browse your files</span>
+              <span id="upload-help" class="mt-4 text-xs text-[#8a8bae]">Accepted formats: PDF and DOCX · Maximum size: 5 MB</span>
+            </button>
+
+            <div id="selected-file" class="mt-4 hidden items-center gap-3 rounded-2xl border border-violet-100 bg-violet-50/70 p-3">
+              <span class="grid size-11 shrink-0 place-items-center rounded-xl bg-white text-xs font-extrabold text-violet-700">FILE</span>
+              <span class="min-w-0 flex-1"><span id="selected-file-name" class="block truncate text-sm font-bold text-slate-800"></span><span id="selected-file-size" class="text-xs text-slate-500"></span></span>
+              <button id="clear-file" type="button" class="rounded-lg px-3 py-2 text-sm font-semibold text-slate-500 hover:bg-white hover:text-rose-600">Remove</button>
+            </div>
+
+            <p id="upload-message" role="alert" class="mt-4 hidden rounded-xl px-4 py-3 text-sm"></p>
+            <div class="mt-5 flex flex-col-reverse gap-3 border-t border-slate-100 pt-5 sm:flex-row sm:items-center sm:justify-between">
+              <p class="text-xs leading-5 text-slate-500">Your resume is used to create this analysis and is not shared with other users.</p>
+              <button id="analyze-button" type="button" disabled class="inline-flex items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-[#7936ed] to-[#5722c4] px-5 py-3 text-sm font-bold text-white shadow-lg shadow-violet-300/50 transition hover:-translate-y-0.5 hover:shadow-violet-300 disabled:cursor-not-allowed disabled:opacity-50 disabled:hover:translate-y-0"><svg class="size-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2 2.4 6.7L21 11l-6.6 2.3L12 20l-2.4-6.7L3 11l6.6-2.3L12 2Zm7 13 1.2 3.2L23 19l-2.8 1-1.2 3-1.2-3L15 19l2.8-.8L19 15Z"/></svg><span>Analyze resume</span></button>
+            </div>
+          </section>
+
+          <section class="overflow-hidden rounded-[22px] border border-[#e6e1ff] bg-white/95 shadow-[0_12px_32px_-22px_rgba(68,47,160,.3)]" aria-labelledby="history-heading">
+            <div class="flex items-center justify-between border-b border-violet-50 px-5 py-5 sm:px-6">
+              <div><p class="text-xs font-bold uppercase tracking-[.14em] text-violet-600">Your workspace</p><h2 id="history-heading" class="mt-1 text-lg font-extrabold">Analysis history</h2></div>
+              <span id="history-count" class="grid min-w-8 place-items-center rounded-full bg-violet-100 px-2.5 py-1 text-xs font-bold text-violet-700">0</span>
+            </div>
+            <div id="history-list" class="max-h-[430px] space-y-2 overflow-y-auto p-3" aria-live="polite"><p class="px-3 py-8 text-center text-sm text-slate-400">Loading your analyses...</p></div>
+          </section>
+        </div>
+
+        <section id="analysis-panel" class="mt-6 hidden scroll-mt-6" aria-labelledby="analysis-title" aria-live="polite">
+          <div class="mb-4 flex flex-col justify-between gap-3 sm:flex-row sm:items-end">
+            <div><p class="text-xs font-bold uppercase tracking-[.14em] text-violet-600">Resume report <span id="analysis-date"></span></p><h2 id="analysis-title" class="mt-1 text-2xl font-extrabold tracking-tight text-[#111235]">Analysis</h2><p id="analysis-filename" class="mt-1 text-sm text-slate-500"></p></div>
+            <button id="back-to-upload" type="button" class="w-fit rounded-xl border border-violet-200 bg-white px-4 py-2.5 text-sm font-semibold text-violet-700 transition hover:bg-violet-50">Analyze another resume</button>
+          </div>
+          <div id="analysis-content" class="grid gap-4 lg:grid-cols-2"></div>
+        </section>
+      </div>
+    </main>
+    <script src="./js/api.js"></script>
+    <script src="./js/resumeAnalyzer.js"></script>
+  </body>
+</html>

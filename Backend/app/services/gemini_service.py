@@ -21,17 +21,17 @@ if not GEMINI_API_KEY:
     raise ValueError("GEMINI_API_KEY is missing from .env")
 
 
-# Create Gemini client
-client = genai.Client(api_key=GEMINI_API_KEY)
-
-
-def test_gemini_connection():
-    response = client.models.generate_content(
-        model="gemini-3.8-flash",
-        contents="Say hello to ApplyWise in one short sentence."
-    )
-
-    return response.text
+# Use the model that passed a live structured-output check. Try a second
+# supported Flash model when Google reports a temporary overload.
+GEMINI_MODEL = os.getenv("GEMINI_MODEL", "gemini-3.1-flash-lite")
+FALLBACK_GEMINI_MODEL = "gemini-3.6-flash"
+client = genai.Client(
+    api_key=GEMINI_API_KEY,
+    http_options=types.HttpOptions(
+        timeout=20_000,
+        retry_options=types.HttpRetryOptions(attempts=1),
+    ),
+)
 
 
 def analyze_resume(extracted_text: str) -> dict:
@@ -57,17 +57,33 @@ def analyze_resume(extracted_text: str) -> dict:
     {extracted_text}
     """
 
-    response = client.models.generate_content(
-        model="gemini-3.8-flash",
-        contents=prompt,
-        config=types.GenerateContentConfig(
-            response_mime_type="application/json",
-            response_schema=ResumeAnalysis,
-            temperature=0.2,
-        ),
+    config = types.GenerateContentConfig(
+        response_mime_type="application/json",
+        response_schema=ResumeAnalysis,
+        temperature=0.2,
     )
+    last_error = None
 
-    if response.parsed is None:
+    for model in dict.fromkeys((GEMINI_MODEL, FALLBACK_GEMINI_MODEL)):
+        try:
+            response = client.models.generate_content(
+                model=model,
+                contents=prompt,
+                config=config,
+            )
+        except Exception as error:
+            if getattr(error, "status_code", None) not in {408, 429, 500, 502, 503, 504}:
+                raise
+            last_error = error
+            continue
+
+        parsed = response.parsed
+        if isinstance(parsed, ResumeAnalysis):
+            return parsed.model_dump()
+        if isinstance(parsed, dict):
+            return ResumeAnalysis.model_validate(parsed).model_dump()
+        if response.text:
+            return ResumeAnalysis.model_validate_json(response.text).model_dump()
         raise ValueError("Gemini did not return structured resume data.")
 
-    return response.parsed.model_dump()
+    raise RuntimeError("Gemini models are temporarily unavailable.") from last_error

@@ -10,7 +10,7 @@ async function submitAuth(path, payload, message, submitButton) {
     const data = await apiRequest(path, { method: "POST", body: JSON.stringify(payload) });
     if (path === "/auth/login") {
       localStorage.setItem("access_token", data.access_token);
-      window.location.replace("./index.html");
+      window.location.replace("./dashboard.html");
     } else {
       message.textContent = "Account created. You can now log in.";
       message.classList.remove("hidden", "text-red-600", "bg-rose-50");

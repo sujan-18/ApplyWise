@@ -11,7 +11,7 @@ async function apiRequest(endpoint, options = {}) {
         ...options.headers,
     };
 
-    if (options.body) {
+    if (options.body && !(options.body instanceof FormData)) {
         headers["Content-Type"] = "application/json";
     }
 
